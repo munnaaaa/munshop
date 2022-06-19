@@ -9,6 +9,7 @@ const Csgo = lazy(() => import('./Csgo'));
 const Logincsgo = lazy(() => import('./Logincsgo'));
 const Loginml = lazy(() => import('./Loginml'));
 const LoginValo = lazy(() => import('./LoginValo'));
+const Api = lazy(() => import('./Api'));
 
 const App = () => (
 <Router>
@@ -22,6 +23,7 @@ const App = () => (
       <Route path="/Logincsgo" element={<Logincsgo />} />
       <Route path="/Loginml" element={<Loginml />} />
       <Route path="/LoginValo" element={<LoginValo />} />
+      <Route path="/Api" element={<Api />} />
       
       </Routes>
   </Suspense>
